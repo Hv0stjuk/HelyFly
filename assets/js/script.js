@@ -184,5 +184,32 @@ $('.photos__slider').slick({
 	slidesToShow: 1,
 	adaptiveHeight: false,
 	arrows: false,
-	mobileFirst: true
+	mobileFirst: true,
+	responsive: [
+		{
+		breakpoint: 576,
+		settings: {
+			slidesToShow: 2,
+			slidesToScroll: 1
+		}
+	}, {
+		breakpoint: 767,
+		settings: 'unslick'
+		
+	}]
+});
+
+$('.meet__slider').slick({
+	infinite: true,
+	speed: 300,
+	slidesToShow: 1,
+	adaptiveHeight: false,
+	arrows: false,
+	mobileFirst: true,
+	responsive: [
+		{
+		breakpoint: 1279,
+		settings: 'unslick'
+		
+	}]
 });
